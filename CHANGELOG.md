@@ -1,6 +1,17 @@
 Changelog
 =========
 
+## [3.1.0](https://github.com/ckeditor/eslint-config-ckeditor5/compare/v3.0.0...v3.1.0) (2020-09-09)
+
+### Features
+
+* Introduced the rule for checking `CKEditorError`. Closes [ckeditor/ckeditor5#7822](https://github.com/ckeditor/ckeditor5/issues/7822).
+
+### Other changes
+
+* Enabled the [`no-unused-expressions`](https://eslint.org/docs/rules/no-unused-expressions) rule. Closes [ckeditor/ckeditor5#7843](https://github.com/ckeditor/ckeditor5/issues/7843).
+
+
 ## [2.1.0](https://github.com/ckeditor/ckeditor5-dev/compare/eslint-config-ckeditor5@2.0.1...eslint-config-ckeditor5@2.1.0) (2020-02-26)
 
 ### Features

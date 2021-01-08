@@ -23,6 +23,23 @@ module.exports = {
 		'ckeditor5-rules',
 		'mocha'
 	],
+	settings: {
+		dllPackages: [
+			'clipboard',
+			'cloud-services-core',
+			'core',
+			'engine',
+			'enter',
+			'paragraph',
+			'select-all',
+			'typing',
+			'ui',
+			'undo',
+			'upload',
+			'utils',
+			'widget'
+		]
+	},
 	rules: {
 		// ## Possible errors
 		// Offing because we keep the browser env disabled so when using a console you need to define
@@ -299,6 +316,7 @@ module.exports = {
 		],
 		'ckeditor5-rules/no-relative-imports': 'error',
 		'ckeditor5-rules/ckeditor-error-message': 'error',
+		'ckeditor5-rules/ckeditor-dll-import': 'error',
 		'mocha/handle-done-callback': 'error',
 		'mocha/no-async-describe': 'error',
 		'mocha/no-exclusive-tests': 'error',
@@ -313,7 +331,14 @@ module.exports = {
 		{
 			'files': [ '**/tests/**/*.js' ],
 			'rules': {
-				'no-unused-expressions': 'off'
+				'no-unused-expressions': 'off',
+				'ckeditor5-rules/ckeditor-dll-import': 'off'
+			}
+		},
+		{
+			'files': [ '**/docs/**/*.js' ],
+			'rules': {
+				'ckeditor5-rules/ckeditor-dll-import': 'off'
 			}
 		}
 	]

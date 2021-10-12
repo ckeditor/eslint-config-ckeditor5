@@ -23,6 +23,11 @@ module.exports = {
 		'ckeditor5-rules',
 		'mocha'
 	],
+	settings:{
+		disallowedCrossImportsPackages:[
+			'ckeditor5-watchdog'
+		]
+	},
 	rules: {
 		// ## Possible errors
 		// Offing because we keep the browser env disabled so when using a console you need to define
@@ -299,6 +304,7 @@ module.exports = {
 		],
 		'ckeditor5-rules/no-relative-imports': 'error',
 		'ckeditor5-rules/ckeditor-error-message': 'error',
+		'ckeditor5-rules/no-cross-package-imports': 'error',
 		'mocha/handle-done-callback': 'error',
 		'mocha/no-async-describe': 'error',
 		'mocha/no-exclusive-tests': 'error',

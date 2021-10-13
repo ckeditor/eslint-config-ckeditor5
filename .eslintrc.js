@@ -23,8 +23,8 @@ module.exports = {
 		'ckeditor5-rules',
 		'mocha'
 	],
-	settings:{
-		disallowedCrossImportsPackages:[
+	settings: {
+		disallowedCrossImportsPackages: [
 			'ckeditor5-watchdog'
 		]
 	},

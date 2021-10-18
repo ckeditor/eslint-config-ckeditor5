@@ -1,6 +1,13 @@
 Changelog
 =========
 
+## [3.1.1](https://github.com/ckeditor/eslint-config-ckeditor5/compare/v3.1.0...v3.1.1) (2021-10-18)
+
+### Other changes
+
+* Enabled the `ckeditor5-rules/no-cross-package-imports` rule that disallows importing modules from CKEditor 5 packages inside the `@ckeditor/ckeditor5-watchdog` package. See: [ckeditor/ckeditor5#9318](https://github.com/ckeditor/ckeditor5/issues/9318). ([commit](https://github.com/ckeditor/eslint-config-ckeditor5/commit/e113b387e2e80ec33f73b1a1a78a7efaf86fa853))
+
+
 ## [3.1.0](https://github.com/ckeditor/eslint-config-ckeditor5/compare/v3.0.0...v3.1.0) (2020-09-09)
 
 ### Features
